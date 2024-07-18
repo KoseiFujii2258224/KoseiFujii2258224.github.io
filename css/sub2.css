@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    color: #f8f8f8;
+}
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #fcfbfb; */
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    background-image: url(/ASSIGNMENT/MEDIA/barbackground.png);
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    /* background-color: transparent; */
+    background-color: #ffffffc2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+h1 > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul {
+    margin: 0;
+    display: flex;
+}
+header li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+}
+header li :hover{
+    box-shadow: 0 3px 6px 0 rgba(61, 137, 159, 0.924);
+	transform: translateY(-3.1875em);
+}
+header nav {
+    margin: 0 0 0 auto;
+}
+
+/*  */
+
+
+
+/* ページの見出し */
+h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(61, 137, 159, 0.924);
+    margin-top: 5rem;
+}
+
+/* リンクの色と下線 */
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* headerの点消去 */
+ul > li {
+    list-style: none;
+}
+
+
+/*  */
+
+
+/* 選択ボタン */
+main nav > ul > li {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+    margin: auto;
+    /* 角を丸める */
+    border-radius: 6px;
+    /* パディング */
+    padding: 6px 5px ;
+    background: linear-gradient(#f7a72e,rgba(61, 137, 159, 0.924));
+}
+main nav > ul > li:hover {
+	opacity: 0.6;
+}
+main nav > ul {
+    text-align: center;
+}
+
+/* あらすじの段落 */
+main dl  {
+    text-align: center;
+    /* margin: 1rem 5rem 2rem 1rem; */
+}
+main dl > dt {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+main dl > dd {
+    font-size: 18px;
+    margin: 2rem 4rem ;
+}
+
+/* 表 */
+div > h4 {
+    text-align: center;
+    font-size: 18px;
+}
+
+table  {
+    font-size: large;
+    margin: auto;
+}
+
+
+
+/* 導入 */
+main > div > h3 {
+    margin-top: 5rem;
+}
+
+
+div > div > p {
+    margin: 5rem 0rem 5rem 0rem;
+}
+
+/* もし変更があったとき用にクラスで指定 */
+.margin_auto{
+    margin-top: 10rem;
+}
+
+/* 画像サイズを合わせる */
+.resizeimage img {
+    width: 100vw; 
+}
+
+/* 中心寄せ */
+.center {
+    text-align: center;
+}
+
+
+/* 強調したい箇所（青） */
+.strength span {
+    color: rgba(61, 137, 159, 0.924);
+    font-weight: bold;
+}
+
+/* フォントサイズ１８ */
+.font-size {
+    font-size: 18px;
+}
+
+/* 境界線 */
+.border {
+    border-top: 1px dashed rgb(255, 255, 255);
+}
+
+/* gridの設定 */
+.container {
+    /* グリッドコンテナの定義 */
+    display: grid;
+
+    /* グリッド列の定義 */
+    grid-template-columns: 1fr 1fr;
+
+    /* グリッドアイテム間のギャップ */
+    /* 列 */
+    column-gap: 20px;
+    /* 行 */
+    row-gap: 1em;
+
+    /* グリッド行の定義 : 1行目 2行目 3行目 ...*/
+    grid-template-rows: 100px 1fr 2fr;
+}
+
+/* 黒染め */
+#black{
+    color: black;
+}

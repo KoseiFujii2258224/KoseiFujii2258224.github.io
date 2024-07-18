@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    background-image: url(/ASSIGNMENT/MEDIA/backgroud.png);
+    background-attachment: fixed;
+} */
+
+
+header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #ffffffc3;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul {
+    margin: 0;
+    display: flex;
+}
+
+header li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+}
+
+header li :hover {
+    box-shadow: 0 3px 6px 0 rgba(139, 203, 243, 0.702);
+    transform: translateY(-3.1875em);
+}
+
+header nav {
+    margin: 0 0 0 auto;
+}
+
+/*  */
+
+/* ページの見出し */
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgba(61, 137, 159, 0.924);
+    margin-top: 5rem;
+}
+
+/* リンクの色と下線 */
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* 選択ボタン */
+section>nav>ul {
+    text-align: center;
+}
+
+/* 選択ボタン */
+section>nav li {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+    margin: auto;
+    /* 角を丸める */
+    border-radius: 6px;
+    /* パディング */
+    padding: 6px 5px;
+    background: linear-gradient(#f7a72e, rgba(61, 137, 159, 0.924));
+}
+
+section>nav li:hover {
+    opacity: 0.6;
+}
+
+/* header + 自己紹介のリストの点消去*/
+ul>li {
+    list-style: none;
+}
+
+/* あらすじ前の2行間の余白調節 */
+p+p {
+    margin-top: -1rem;
+}
+
+/* アニメタイトルの見出し */
+dl>dt {
+    text-align: center;
+    color: #f7a72e;
+    font-weight: bold;
+}
+
+/* もし変更があったとき用にクラスで指定 */
+.margin_auto{
+    margin-top: 10rem;
+}
+
+
+/* 上に間開ける */
+.exmargin {
+    margin-top: 1rem;
+}
+
+/* 横に移動 */
+.sidemargin {
+    margin-left: 2rem;
+}
+
+/* 中心寄せ */
+.center {
+    text-align: center;
+}
+
+/* タイトル仕様 */
+/* h2からh4＋dt＋footer */
+.title {
+    color: rgba(61, 137, 159, 0.924);
+    text-align: center;
+}
+
+/* リストの中心寄せ（左端はそろえる） */
+.fit_center {
+    width: fit-content;
+    margin: auto;
+}
+
+/* 太文字 */
+.bold {
+    font-weight: bold;
+}
+
+/* 強調したい箇所（オレンジ） */
+.strength span {
+    color: #f7a72e;
+    font-weight: bold;
+}
+
+/* 境界線 */
+.border {
+    border-top: 1px solid black;
+}
+.border-d {
+    border-top: 1px dashed black;
+}
+
+/* intro部分の位置調整 */
+#intro {
+    margin: 4rem 2rem 4rem 2rem;
+    text-align: center;
+}
+.explain {
+    margin: 2rem 4rem 2rem 4rem;
+    text-align: center;
+}
+
+/* gridの設定 */
+.container {
+    /* グリッドコンテナの定義 */
+    display: grid;
+
+    /* グリッド列の定義 */
+    grid-template-columns: 1fr 1fr;
+
+    /* グリッドアイテム間のギャップ */
+    /* 列 */
+    /* column-gap: 0px; */
+    /* 行 */
+    row-gap: 1em;
+
+    /* グリッド行の定義 : 1行目 2行目 3行目 ...*/
+    grid-template-rows: 100px 1fr 2fr;
+}
+/* .container > div > ol{
+    background-color: rgba(239, 214, 93, 0.505);
+}
+.container > div > ul{
+    background-color: rgba(239, 214, 93, 0.505);
+} */
+
+/* 背景設定 */
+
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    z-index: -1;
+}
+
+.Paper_v2 {
+    background-image:
+        repeating-linear-gradient(to bottom,
+            transparent 25px,
+            rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px,
+            transparent 27px, transparent 51px,
+            rgba(0, 0, 0, 0.04) 52px, rgba(0, 0, 0, 0.04) 52px,
+            transparent 53px, transparent 77px,
+            rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px,
+            transparent 79px, transparent 103px,
+            rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px,
+            transparent 105px, transparent 129px,
+            rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px),
+
+        repeating-linear-gradient(to right,
+            transparent 25px,
+            rgba(0, 0, 0, 0.04) 26px, rgba(0, 0, 0, 0.04) 26px,
+            transparent 27px, transparent 51px,
+            rgba(0, 0, 0, 0.04) 52px, rgba(0, 0, 0, 0.04) 52px,
+            transparent 53px, transparent 77px,
+            rgba(0, 0, 0, 0.04) 78px, rgba(0, 0, 0, 0.04) 78px,
+            transparent 79px, transparent 103px,
+            rgba(0, 0, 0, 0.04) 104px, rgba(0, 0, 0, 0.04) 104px,
+            transparent 105px, transparent 129px,
+            rgba(0, 0, 0, 0.04) 130px, rgba(0, 0, 0, 0.04) 130px);
+}
