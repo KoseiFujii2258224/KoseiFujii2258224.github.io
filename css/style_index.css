@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #fcfbfb; */
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/Fin_assignment/media/background.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    /* background-color: transparent; */
+    background-color: #ffffffc2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+h1>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header ul {
+    margin: 0;
+    display: flex;
+}
+
+header li {
+    margin: 0 0 0 30px;
+    font-size: 15px;
+}
+
+header li :hover {
+    box-shadow: 0 3px 6px 0 rgba(242, 209, 138, 0.924);
+    transform: translateY(-3.1875em);
+}
+
+header nav {
+    margin: 0 0 0 auto;
+}
+
+/*  */
+
+
+
+/* ページの見出し */
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 5rem;
+}
+
+h2>span {
+    color: rgb(185, 119, 13);
+}
+
+/* リンクの色と下線 */
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* headerの点消去 */
+ul>li {
+    list-style: none;
+}
+
+
+
+
+/* 選択ボタン */
+section>nav>ul {
+    text-align: center;
+}
+
+/* 選択ボタン */
+section>nav li {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+    margin: 10px;
+    /* 角を丸める */
+    border-radius: 10px;
+    /* パディング */
+    padding: 10px 50px;
+    background: linear-gradient(#f7a72e61, rgba(78, 182, 210, 0.866));
+}
+
+section>nav li:hover {
+    opacity: 0.6;
+}
+
+.center {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+
+/* https://jp-seemore.com/web/3513/#:~:text=%E2%97%8FJavascript%E3%81%A7%E5%8B%95%E3%81%8D%E3%81%AE%E3%81%82%E3%82%8B%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B%E5%9F%BA%E6%9C%AC%20%E2%97%8BHTML%E3%81%A8CSS%20%E2%97%8FJavascript%E3%81%A7%E5%8B%95%E3%81%8D%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B10%E3%81%AE%E6%96%B9%E6%B3%95,%E2%97%8B%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%891%EF%BC%9A%E7%94%BB%E5%83%8F%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%80%E3%83%BC%20%E2%97%8B%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%892%EF%BC%9A%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E3%83%80%E3%82%A6%E3%83%B3%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%20%E2%97%8B%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%893%EF%BC%9A%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%89%E3%82%A6%20%E2%97%8B%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%894%EF%BC%9A%E3%82%A2%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%B3 */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+

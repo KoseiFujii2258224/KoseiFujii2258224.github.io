@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kosei Fujii">
+    <meta name="keywords" content="Trump,OriginalGame,Rule">
+    <link rel="stylesheet" href="css/style_rule.css">
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
+
+    <title>Joker with Magic</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <a href="index.html">FVPP</a>
+            <!-- Finding value in the pastimes of the past -->
+        </h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="About.html" target="_self">ABOUT</a></li>
+                <li><a href="Service.html" target="_self">SERVICE</a></li>
+                <li><a href="Company.html" target="_self">COMPANY</a></li>
+                <li><a href="Contact.html" target="_self">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2> Joker with Magic のルール説明 </h2>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="WaitingGame.html" target="_self">Download Game</a></li>
+                    <li><a href="Rule.html" target="_self">Rule</a></li>
+                    <li><a href="Card.html" target="_self">Card Effect</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <div>
+                <h3>ゲームの概要</h3>
+                <!-- src属性：ファイルの場所（相対パスで指定） -->
+                <div class="container">
+                    <p class="resizeimage">
+                        <img src="media/trump.png" alt="sample_trump"  width=100% height=100%>
+                    </p>
+                    <p id="p-1">
+                        「Joker with Magic」とは、誰しもが1度は遊んだことがあるであろうトランプゲームの「ババ抜き」を基に作成したゲームです。
+                        そのため、基本的な流れはババ抜き同様、自分のターンに相手の手札からカードを引き、同じ数字のカードがそろえば手札から捨てるという感じです。
+                        ただ、本ゲームは2人プレイです。その上、ジョーカーを除いた全てのカードに魔法効果が付与され、それと同時に、トランプに本来記されている数字もカード名に変更されています。
+                        「Joker with Magic」では、この"魔法の効果"を理解し、早急に状況判断をする能力が求められます。
+                    <p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>ゲームの流れ</h3>
+                <div class="container">
+                    <ol>
+                        <li>始めにカードを配布し、引く順番を決めます。</li>
+                        <li>次に、手札に同じ名前のカードがある場合は、そのカードを2枚とも捨てます。</li>
+                        <li>手札が整ったら、順番に従って次の人のカードを引き始めます。</li>
+                        <li>カードを引いた際にカードがそろった場合は、そのカードを2枚とも捨てます。</li>
+                        <li>カードを捨てる際、防御魔法カード以外の魔法カードは効果を発揮します。<br>(防御魔法は1枚で効果を発揮し、魔法カードの効果対象になった際にその効果を発動します。発動しても、手札から捨てません。)</li>
+                        <li>同様にターンを進めていき、基本的には最後にジョーカーを持っていた人の負けです。しかし、Declareの効果により宣言したターン数丁度でゲームが終了した場合は、たとえジョーカーを所持していたとしても勝利します。</li>
+                    </ol>
+                    <p class="resizeimage">
+                        <img src="media/JokerwithMagic.jpg" alt="JokerwithMagic"  width=100% height=100%>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        
+    </main>
+
+    <footer class="center">
+
+        Copyright &copy; Kosei Fujii, All Rights Reserved.
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script_rule.js"></script>
+</body>
+
+</html>

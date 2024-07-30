@@ -1,0 +1,55 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.365);
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+/* よこならびにする */
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card.hidden {
+    background-color: grey;
+}
+
+.controls {
+    margin-top: 40px;
+}
+
+#CR {
+    text-align: center;
+    margin-top: 100px;
+}

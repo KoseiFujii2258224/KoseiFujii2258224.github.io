@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kosei Fujii">
+    <meta name="keywords" content="Trump,OriginalGame,Card">
+    <link rel="stylesheet" href="css/style_card.css">
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: solid;
+        }
+    </style>
+
+    <title>Joker with Magic</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <a href="index.html">FVPP</a>
+            <!-- Finding value in the pastimes of the past -->
+        </h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="About.html" target="_self">ABOUT</a></li>
+                <li><a href="Service.html" target="_self">SERVICE</a></li>
+                <li><a href="Company.html" target="_self">COMPANY</a></li>
+                <li><a href="Contact.html" target="_self">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2> Joker with Magic のカード説明 </h2>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="WaitingGame.html" target="_self">Download Game</a></li>
+                    <li><a href="Rule.html" target="_self">Rule</a></li>
+                    <li><a href="Card.html" target="_self">Card Effect</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="animated">
+            <div>
+                <h3>魔法とは</h3>
+                <div class="container">
+                    <!-- src属性：ファイルの場所（相対パスで指定） -->
+                    <p class="resizeimage">
+                        <img src="media/JokerwithMagic.jpg" alt="sample_trump" width=100% height=100%>
+                    </p>
+    
+                    <p id="topm">本ゲームにおいて、Joker以外の各カードは <span>「攻撃魔法」「防御魔法」「特殊魔法」「逆転魔法」の4種どれかの魔法が付与</span>されています。ゲーム開始後、「攻撃魔法」「特殊魔法」「逆転魔法」の3種は、<span>同カードが手札に揃った際に捨てる行為と同時に効果を発揮します。</span>一方で、「防御魔法」は、そのカードが <span>魔法効果の対象になった際に単体で効果を発揮します。</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>各種カードの魔法効果</h3>
+            <div class="container">
+                
+                <!--table:表を表示するタグ-->
+                <table>
+                    <!--caption:表の説明-->
+                    <caption>攻撃魔法</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Card Name</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Fire</th>
+                            <!--td:通常のセル-->
+                            <td>互いの手札から1種類を指定して燃やす（墓地に捨てる）ことが出来る。その際、相手も同じカードを墓地に捨てることが出来る（原則、そのカードの効果は発動しない）。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Wind</th>
+                            <!--td:通常のセル-->
+                            <td>相手の手札から1枚をランダムで墓地に飛ばす（墓地に捨てる）ことが出来る。その際、自分も同じカードを墓地に捨てることが出来る（原則、そのカードの効果は発動しない）。もし指定したカードがJockerだった場合、その時点で「敗北」する。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Thief</th>
+                            <!--td:通常のセル-->
+                            <td>相手の場所を1箇所指定してその場所にあるカードを奪って手札に加える事が出来る。揃った場合、そのペアを墓地に捨てるが効果は発動しない。</td>
+
+                        </tr>
+                    </tbody>
+                    
+                </table>
+
+                <table>
+                    <!--caption:表の説明-->
+                    <caption>防御魔法</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Card Name</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Water</th>
+                            <!--td:通常のセル-->
+                            <td>このカードは攻撃魔法カードの効果を一切受けない。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Guardian</th>
+                            <!--td:通常のセル-->
+                            <td>このカードは攻撃魔法カードの効果を一切受けない。</td>
+
+                        </tr>
+                    </tbody>
+                    
+                </table>
+
+                <table>
+                    <!--caption:表の説明-->
+                    <caption>特殊魔法</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Card Name</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Freeze</th>
+                            <!--td:通常のセル-->
+                            <td>相手を凍らせる。相手は次のターンを1度飛ばされ、もう一度君がカードを引くことが出来る。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Open</th>
+                            <!--td:通常のセル-->
+                            <td>相手の手札カードの場所をすべて見ることが出来る（相手のカードが3枚以下の場合は発動できない）。Openの効果を発動した次のターンに相手がDoubleの効果を発動した場合、始めの1回のみOpenの効果が適応される。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Double</th>
+                            <!--td:通常のセル-->
+                            <td>次のターン、相手に2枚カードを引かれる（相手は引いたカードの効果をどちらも発動可能）。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Declare</th>
+                            <!--td:通常のセル-->
+                            <td>このカードを墓地に送ったとき、何ターン目に試合が終わるかを予想し、宣言通り試合が終了した場合にはたとえJockerを持って負ける状況だったとしても勝利する。</td>
+
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <table>
+                    <!--caption:表の説明-->
+                    <caption>逆転魔法</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Card Name</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Rotate</th>
+                            <!--td:通常のセル-->
+                            <td>このカードが2枚そろって墓地に捨てられた瞬間、自分と相手の手札のカードをすべて交換する。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Road_to_win</th>
+                            <!--td:通常のセル-->
+                            <td>このカードを墓地に送ったとき、自分がJockerを持っていた場合相手に渡す。</td>
+
+                        </tr>
+                        <tr>
+                            <th>Road_to_lose</th>
+                            <!--td:通常のセル-->
+                            <td>このカードを墓地に送ったとき、相手がJockerを持っている場合Jockerを受け取る。</td>
+
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="center">
+
+        Copyright &copy; Kosei Fujii, All Rights Reserved.
+
+    </footer>
+
+    <script src="js/script_card.js"></script>
+
+</body>
+
+</html>
